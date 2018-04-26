@@ -275,6 +275,10 @@ then
     download_benchmark -4 http://proof.ovh.ca/files/100Mio.dat | \
         Bps_to_MiBps
 
+    printf '    mirror.wdc1.us.leaseweb.net, (Manassas, VA, USA ):         '
+    download_benchmark -4 http://mirror.us.leaseweb.net/speedtest/100mb.bin | \
+        Bps_to_MiBps
+
 else
     printf 'No IPv4 connectivity detected\n'
 fi
