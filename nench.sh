@@ -255,27 +255,27 @@ then
     printf '    your IPv4:    %s\n' "$(redact_ip "$ipv4")"
     printf '\n'
 
-    printf '    Cachefly CDN:         '
+    printf '    Cachefly CDN:                               '
     download_benchmark -4 http://cachefly.cachefly.net/100mb.test | \
         Bps_to_MiBps
 #################################################
-    printf '    Leaseweb (NL):        '
+    printf '    Leaseweb (NL):                              '
     download_benchmark -4 http://mirror.nl.leaseweb.net/speedtest/100mb.bin | \
         Bps_to_MiBps
 
-    printf '    Online.net (FR):      '
+    printf '    Online.net (FR):                            '
     download_benchmark -4 http://ping.online.net/100Mo.dat | \
         Bps_to_MiBps
 #################################################        
-    printf '    Softlayer DAL (US):   '
+    printf '    Softlayer DAL (US):                         '
     download_benchmark -4 http://speedtest.dal01.softlayer.com/downloads/test100.zip | \
         Bps_to_MiBps
 
-    printf '    OVH BHS (CA):         '
+    printf '    OVH BHS (CA):                               '
     download_benchmark -4 http://proof.ovh.ca/files/100Mio.dat | \
         Bps_to_MiBps
 #################################################
-    printf '    mirror.wdc1.us.leaseweb.net, (Manassas, VA, USA ):         '
+    printf '    leaseweb.net, (Manassas, VA, USA ):         '
     download_benchmark -4 http://mirror.us.leaseweb.net/speedtest/100mb.bin | \
         Bps_to_MiBps
         
@@ -283,7 +283,7 @@ then
     download_benchmark -4 http://speedtest.sea01.softlayer.com/downloads/test100.zip | \
         Bps_to_MiBps
         
-    printf '    Linode, (Linode, Fremont, CA):         '
+    printf '    Linode, (Linode, Fremont, CA):                '
     download_benchmark -4 http://speedtest.fremont.linode.com/100MB-fremont.bin | \
         Bps_to_MiBps
 #################################################
